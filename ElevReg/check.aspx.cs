@@ -7,18 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ElevReg
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class check : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-
-
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-            Response.Redirect("check.aspx");
         }
     }
 }
