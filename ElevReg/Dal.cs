@@ -10,16 +10,16 @@ namespace ElevReg
     public class Dal
     {
 
-        public bool ValidateUser(string userName, string password)
+          public bool ValidateUser(string userName, string password)
         {
             bool Valid = false;
             try
             {
-                PrincipalContext pc = new PrincipalContext(ContextType.Domain, "elevreg-skpit.local");
+                PrincipalContext pc = new PrincipalContext(ContextType.Domain, "skpit-slagelse.lokal");
                 Valid = pc.ValidateCredentials(userName, password);
                 if (Valid)
                 {
-                    DirectorySearcher search = new DirectorySearcher(new DirectoryEntry("LDAP://elev-skpit.local", userName, password))
+                    DirectorySearcher search = new DirectorySearcher(new DirectoryEntry("LDAP://skpit-slagelse.lokal", userName, password))
                     {
                         //makes a filter the searches for users with the same UNI(sAMAccountName)
                         Filter = string.Format("(&(objectClass=user)(objectCategory=person)(sAMAccountName={0}))", userName)
@@ -47,7 +47,7 @@ namespace ElevReg
             {
             }
 
-
+       
             return Valid;//true = user authenticated!
         }
 
