@@ -27,7 +27,7 @@ namespace ElevReg
                     //asks for name and what group it is member of
 
                     search.PropertiesToLoad.Add("sAMAccountName");
-
+                         
 
 
                     //gets the information
