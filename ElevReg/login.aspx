@@ -41,7 +41,7 @@
 					</div>
 					
 					<div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+                     <asp:TextBox ID="passw" runat="server"  cssClass="input100" type="pass"></asp:TextBox>
 						<span class="label-input100">Kodeord</span>
 					</div>
 
@@ -51,6 +51,12 @@
 						<!-- <button class="login100-form-btn"> -->
                     <asp:Button ID="Button1" runat="server" Text="Login" cssClass="login100-form-btn" OnClick="Button1_Click1"/>
 
+				
+						
+					<span class="login100-form-title p-b-43">
+						<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+					</span>
+					
 				
 						
 					</div>

@@ -9,9 +9,10 @@ namespace ElevReg
 {
     public partial class check : System.Web.UI.Page
     {
+        HttpCookie reqCookies;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }
